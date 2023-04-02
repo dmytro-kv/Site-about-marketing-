@@ -1,0 +1,149 @@
+.blog {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.blog__header {
+  margin-bottom: 64px;
+  opacity: 0;
+}
+
+.blog__header.active {
+  opacity: 1;
+  transition: all 1.5s ease 0.1s;
+}
+
+.blog__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.item-blog {
+  background: rgba(129, 129, 139, 0.1);
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-blog__header {
+  position: relative;
+}
+
+.item-blog__category {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(129, 129, 139, 0.5);
+  border-radius: 0px 10px 0px 0px;
+  padding: 9px 10px;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.item-blog__image {
+  display: block;
+  position: relative;
+  padding-bottom: 49.2%;
+}
+
+.item-blog__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+}
+.item-blog__body {
+  padding: 36px 26px;
+}
+
+.item-blog__date {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.item-blog__date:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.item-blog__title {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.42;
+  color: #ffffff;
+}
+
+.item-blog__link-title {
+  color: #ffffff;
+}
+
+.item-blog__title:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.item-blog__title:hover {
+  text-decoration: underline;
+}
+
+.item-blog__text {
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.item-blog__text:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.item-blog__link {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #3d96f4;
+  align-self: flex-end;
+  display: block;
+}
+
+.item-blog__link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  .blog__items {
+    gap: 20px;
+  }
+
+  .item-blog__body {
+    padding: 25px 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .blog {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .blog__header {
+    margin-bottom: 44px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .blog {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .blog__header {
+    margin-bottom: 30px;
+  }
+
+  .blog__items {
+    grid-template-columns: auto;
+  }
+}

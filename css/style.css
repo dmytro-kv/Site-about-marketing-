@@ -1,0 +1,162 @@
+/* Reset styles */
+@import url("reset.css");
+/* ------------ */
+
+/* Header */
+@import url("header.css");
+@import url("burger.css");
+/* ------------ */
+
+/* Section main */
+@import url("section_main.css");
+/* ------------ */
+
+/* Section clients */
+@import url("section_clients.css");
+/* ------------ */
+
+/* Section services */
+@import url("section_services.css");
+/* ------------ */
+
+/* Section services */
+@import url("section_why.css");
+/* ------------ */
+
+/* Section achievements */
+@import url("section_achievements.css");
+/* ------------ */
+
+/* Section testimonials */
+@import url("section_testimonials.css");
+/* ------------ */
+
+/* Section blog */
+@import url("section_blog.css");
+/* ------------ */
+
+/* Section start */
+@import url("section_start.css");
+/* ------------ */
+
+/* Footer */
+@import url("footer.css");
+/* ------------ */
+
+/* Popup */
+@import url("popup.css");
+/* ------------ */
+
+/*    default   */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 16px;
+  color: #9c9c9c;
+  background-color: #0d0d11;
+}
+
+[class*="__container"] {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+.text {
+  line-height: 1.5;
+  color: #81818b;
+}
+
+/*     for burger    */
+
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 16px 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #3d96f4;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  transition: background-color 0.3s ease 0s;
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button-dark {
+  background-color: rgba(129, 129, 139, 0.2);
+  transition: background-color 0.3s ease 0s;
+  padding: 16px 31.7px;
+}
+
+.button:hover {
+  background-color: #60adff;
+}
+
+.button-dark:hover {
+  background-color: rgba(129, 129, 139, 0.3);
+}
+
+.ripple {
+  position: absolute;
+  width: 180px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: button-circle 1.5s ease forwards;
+}
+
+.swiper {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.splide {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes button-circle {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(10);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .button {
+    padding: 15px 20px;
+  }
+  .button-dark {
+    padding: 15px 26.7px;
+  }
+
+  .header__button {
+    padding: 15px 24.3px;
+  }
+}
+
+/* ------------ */

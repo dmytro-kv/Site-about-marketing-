@@ -1,0 +1,54 @@
+/* Section clients */
+
+.clients {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.clients__tittle {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 1px;
+  margin-bottom: 44px;
+}
+
+.splide {
+  cursor: pointer;
+}
+
+.splide__list {
+  text-align: center;
+  max-width: 100%;
+}
+
+@media (min-width: 280px) {
+  .splide__slide img {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .clients {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .clients__tittle {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .clients {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .clients__tittle {
+    margin-bottom: 30px;
+  }
+}
